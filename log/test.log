@@ -1,0 +1,148 @@
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test name', '2009-12-04 07:00:21', 'testlink.com', '2009-12-04 07:00:21')[0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test name', '2009-12-04 07:03:29', 'testlink.com', '2009-12-04 07:03:29')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-04 21:27:01) [POST]
+  Parameters: {"story"=>{"name"=>"test story", "link"=>"www.link.com"}}
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test story', '2009-12-04 10:27:01', 'www.link.com', '2009-12-04 10:27:01')[0m
+Redirected to http://test.host/stories
+Completed in 0ms (DB: 16) | 302 Found [http://test.host/stories?story%5Blink%5D=www.link.com&story%5Bname%5D=test+story]
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-04 21:27:01) [POST]
+  Parameters: {"story"=>{"test_should_reject_missing_story_attr(StoriesControllerTest)"=>"story name"}}
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-04 21:27:01) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."name" = 'name') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-04 21:27:01) [GET]
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/stories/new]
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-04 21:27:01) [GET]
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-04 21:31:49) [POST]
+  Parameters: {"story"=>{"name"=>"test story", "link"=>"www.link.com"}}
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test story', '2009-12-04 10:31:49', 'www.link.com', '2009-12-04 10:31:49')[0m
+Redirected to http://test.host/stories
+Completed in 16ms (DB: 0) | 302 Found [http://test.host/stories?story%5Blink%5D=www.link.com&story%5Bname%5D=test+story]
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-04 21:31:49) [POST]
+  Parameters: {"story"=>{"name"=>"story name"}}
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/stories?story%5Bname%5D=story+name]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-04 21:31:49) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."name" = 'name') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-04 21:31:49) [GET]
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/new]
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-04 21:31:49) [GET]
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-04 21:40:35) [POST]
+  Parameters: {"story"=>{"name"=>"test story", "link"=>"www.link.com"}}
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test story', '2009-12-04 10:40:35', 'www.link.com', '2009-12-04 10:40:35')[0m
+Redirected to http://test.host/stories
+Completed in 16ms (DB: 0) | 302 Found [http://test.host/stories?story%5Blink%5D=www.link.com&story%5Bname%5D=test+story]
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-04 21:40:35) [POST]
+  Parameters: {"story"=>{"name"=>"story name"}}
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://test.host/stories?story%5Bname%5D=story+name]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-04 21:40:35) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."name" = 'name') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-04 21:40:35) [GET]
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/new]
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-04 21:40:35) [GET]
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-04 21:57:25) [POST]
+  Parameters: {"story"=>{"name"=>"test story", "link"=>"www.link.com"}}
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test story', '2009-12-04 10:57:25', 'www.link.com', '2009-12-04 10:57:25')[0m
+Redirected to http://test.host/stories
+Completed in 16ms (DB: 0) | 302 Found [http://test.host/stories?story%5Blink%5D=www.link.com&story%5Bname%5D=test+story]
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-04 21:57:25) [POST]
+  Parameters: {"story"=>{"name"=>"story name"}}
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://test.host/stories?story%5Bname%5D=story+name]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-04 21:57:25) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."name" = 'name') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://test.host/stories]
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-04 21:57:25) [GET]
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/stories/new]
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-04 21:57:25) [GET]
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/new]

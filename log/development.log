@@ -1,0 +1,396 @@
+  [4;36;1mSQL (16.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (453.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (156.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStories (20091203004749)
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStories (20091203004749)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "stories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "link" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091203004749')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("stories")[0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('my name', '2009-12-03 03:02:49', 'www.linke.com', '2009-12-03 03:02:49')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "stories" [0m
+  [4;36;1mStory Destroy (0.0ms)[0m   [0;1mDELETE FROM "stories" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStories (20091203004749)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("stories")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-03 14:48:15) [GET]
+
+ActionController::RoutingError (No route matches "/stories" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-03 14:54:01) [GET]
+
+ActionController::RoutingError (No route matches "/stories" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-03 14:54:04) [GET]
+
+ActionController::RoutingError (No route matches "/stories" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-03 14:54:05) [GET]
+
+ActionController::RoutingError (No route matches "/stories" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-03 14:54:24) [GET]
+
+ActionController::RoutingError (No route matches "/stories" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2009-12-03 14:55:48) [GET]
+Rendering stories/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/stories]
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2009-12-03 15:29:59) [GET]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."name" = 'name') LIMIT 1[0m
+Rendering stories/index
+
+ActionView::TemplateError (undefined method `link' for nil:NilClass) on line #1 of app/views/stories/index.html.erb:
+1: a random link: <a href="<%= @story.link %>"><%= @story.name %></a>
+
+    app/views/stories/index.html.erb:1
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "stories" [0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('name', '2009-12-03 04:33:48', 'www.link.com', '2009-12-03 04:33:48')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "stories" [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."name" = 'name') LIMIT 1[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2009-12-03 15:34:07) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."name" = 'name') LIMIT 1[0m
+Rendering stories/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/stories]
+
+
+Processing StoriesController#new (for 127.0.0.1 at 2009-12-04 17:09:34) [GET]
+Rendering stories/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #1 of app/views/stories/new.html.erb:
+1: <% form_for @story do |f| %>
+2: <p>
+3:    name: <br/>
+4:   <%= f.text_field :name %>
+
+    app/views/stories/new.html.erb:1
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#new (for 127.0.0.1 at 2009-12-04 17:10:46) [GET]
+Rendering stories/new
+
+ActionView::TemplateError (undefined method `stories_path' for #<ActionView::Base:0x3947354>) on line #1 of app/views/stories/new.html.erb:
+1: <% form_for @story do |f| %>
+2: <p>
+3:    name: <br/>
+4:   <%= f.text_field :name %>
+
+    app/views/stories/new.html.erb:1
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#new (for 127.0.0.1 at 2009-12-04 17:16:10) [GET]
+Rendering stories/new
+Completed in 110ms (View: 110, DB: 0) | 200 OK [http://localhost/stories/new]
+
+
+Processing StoriesController#new (for 127.0.0.1 at 2009-12-04 17:34:46) [GET]
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/stories/new]
+
+
+Processing StoriesController#new (for 127.0.0.1 at 2009-12-04 17:40:43) [GET]
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/stories/new]
+
+
+Processing StoriesController#new (for 127.0.0.1 at 2009-12-04 17:40:50) [GET]
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/stories/new]
+
+
+Processing StoriesController#new (for 127.0.0.1 at 2009-12-04 17:40:52) [GET]
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/stories/new]
+
+
+Processing StoriesController#new (for 127.0.0.1 at 2009-12-04 17:40:53) [GET]
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/stories/new]
+
+
+Processing StoriesController#new (for 127.0.0.1 at 2009-12-04 17:41:04) [GET]
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/stories/new]
+
+
+Processing StoriesController#create (for 127.0.0.1 at 2009-12-04 17:41:09) [POST]
+  Parameters: {"commit"=>"Save changes", "story"=>{"name"=>"fdsafasd", "link"=>"www.link"}, "authenticity_token"=>"z4fSIDuS3R/hneK57t2rShXsdAy/KD/801ZT1uTOSG4="}
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('fdsafasd', '2009-12-04 06:41:09', 'www.link', '2009-12-04 06:41:09')[0m
+Redirected to http://localhost:3000/stories
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/stories]
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2009-12-04 17:41:09) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."name" = 'name') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/stories]
+
+
+Processing StoriesController#new (for 127.0.0.1 at 2009-12-04 17:46:59) [GET]
+Rendering template within layouts/application
+Rendering stories/new
+
+ActionView::TemplateError (undefined method `error_messsages_for' for #<ActionView::Base:0x4dab548>) on line #1 of app/views/stories/new.html.erb:
+1: <%= error_messsages_for 'story' %>
+2: <% form_for @story do |f| %>
+3: <p>
+4:    name: <br/>
+
+    app/views/stories/new.html.erb:1
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (93.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#new (for 127.0.0.1 at 2009-12-04 17:47:13) [GET]
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/stories/new]
+
+
+Processing StoriesController#create (for 127.0.0.1 at 2009-12-04 17:47:15) [POST]
+  Parameters: {"commit"=>"Save changes", "story"=>{"name"=>"", "link"=>""}, "authenticity_token"=>"z4fSIDuS3R/hneK57t2rShXsdAy/KD/801ZT1uTOSG4="}
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/stories]
+
+
+Processing StoriesController#create (for 127.0.0.1 at 2009-12-04 17:47:25) [POST]
+  Parameters: {"commit"=>"Save changes", "story"=>{"name"=>"fdsawe", "link"=>""}, "authenticity_token"=>"z4fSIDuS3R/hneK57t2rShXsdAy/KD/801ZT1uTOSG4="}
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/stories]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCREATE TABLE "stories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "link" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (46.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (79.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091203004749')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE "stories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "link" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (79.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091203004749')[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2009-12-04 21:29:51) [GET]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."name" = 'name') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/stories]
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2009-12-04 21:30:01) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."name" = 'name') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/stories]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStories (20091203004749)
+Migrating to CreateVotes (20091204105855)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "votes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "story_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091204105855')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("stories")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("votes")[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" LIMIT 1[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 2) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-04 11:05:18', 2, '2009-12-04 11:05:18')[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" LIMIT 1[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-04 11:07:27', 2, '2009-12-04 11:07:27')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStories (20091203004749)
+Migrating to CreateVotes (20091204105855)
+  [4;36;1mSQL (16.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("stories")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("votes")[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2009-12-05 16:05:57) [GET]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."name" = 'name') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 94ms (View: 16, DB: 0) | 200 OK [http://localhost/stories]
+
+
+Processing StoriesController#show (for 127.0.0.1 at 2009-12-05 16:06:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Story with ID=1):
+  app/controllers/stories_controller.rb:21:in `show'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#show (for 127.0.0.1 at 2009-12-05 16:06:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering stories/show
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/stories/2]
