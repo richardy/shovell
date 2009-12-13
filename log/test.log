@@ -146,3 +146,307 @@ Processing StoriesController#new (for 0.0.0.0 at 2009-12-04 21:57:25) [GET]
 Rendering template within layouts/application
 Rendering stories/new
 Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/new]
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test name', '2009-12-13 05:04:07', 'testlink.com', '2009-12-13 05:04:07')[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:04:07', 980190962, '2009-12-13 05:04:07')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:04:07', 980190962, '2009-12-13 05:04:07')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:04:07', 980190962, '2009-12-13 05:04:07')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:04:07', 980190962, '2009-12-13 05:04:07')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:04:07', 980190962, '2009-12-13 05:04:07')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:04:07', 980190962, '2009-12-13 05:04:07')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:04:07', 980190962, '2009-12-13 05:04:07')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:04:07', 980190962, '2009-12-13 05:04:07')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:04:07', 980190962, '2009-12-13 05:04:07')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:04:07', 980190962, '2009-12-13 05:04:07')[0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mStory Load (15.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test name', '2009-12-13 05:07:16', 'testlink.com', '2009-12-13 05:07:16')[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:07:16', 980190962, '2009-12-13 05:07:16')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:07:16', 980190962, '2009-12-13 05:07:16')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:07:16', 980190962, '2009-12-13 05:07:16')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:07:16', 980190962, '2009-12-13 05:07:16')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:07:16', 980190962, '2009-12-13 05:07:16')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:07:16', 980190962, '2009-12-13 05:07:16')[0m
+  [4;36;1mVote Create (16.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:07:16', 980190962, '2009-12-13 05:07:16')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:07:16', 980190962, '2009-12-13 05:07:16')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:07:16', 980190962, '2009-12-13 05:07:16')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:07:16', 980190962, '2009-12-13 05:07:16')[0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test name', '2009-12-13 05:16:34', 'testlink.com', '2009-12-13 05:16:34')[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:16:34', 980190962, '2009-12-13 05:16:34')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:16:34', 980190962, '2009-12-13 05:16:34')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:16:34', 980190962, '2009-12-13 05:16:34')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:16:34', 980190962, '2009-12-13 05:16:34')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:16:34', 980190962, '2009-12-13 05:16:34')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:16:34', 980190962, '2009-12-13 05:16:34')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:16:34', 980190962, '2009-12-13 05:16:34')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:16:34', 980190962, '2009-12-13 05:16:34')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:16:34', 980190962, '2009-12-13 05:16:34')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:16:34', 980190962, '2009-12-13 05:16:34')[0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test name', '2009-12-13 05:17:05', 'testlink.com', '2009-12-13 05:17:05')[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:05', 980190962, '2009-12-13 05:17:05')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:05', 980190962, '2009-12-13 05:17:05')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:05', 980190962, '2009-12-13 05:17:05')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:05', 980190962, '2009-12-13 05:17:05')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:05', 980190962, '2009-12-13 05:17:05')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:05', 980190962, '2009-12-13 05:17:05')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:05', 980190962, '2009-12-13 05:17:05')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:05', 980190962, '2009-12-13 05:17:05')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:05', 980190962, '2009-12-13 05:17:05')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:05', 980190962, '2009-12-13 05:17:05')[0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test name', '2009-12-13 05:17:49', 'testlink.com', '2009-12-13 05:17:49')[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:49', 980190962, '2009-12-13 05:17:49')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:49', 980190962, '2009-12-13 05:17:49')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:49', 980190962, '2009-12-13 05:17:49')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:49', 980190962, '2009-12-13 05:17:49')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:49', 980190962, '2009-12-13 05:17:49')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:49', 980190962, '2009-12-13 05:17:49')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:49', 980190962, '2009-12-13 05:17:49')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:49', 980190962, '2009-12-13 05:17:49')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:49', 980190962, '2009-12-13 05:17:49')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:17:49', 980190962, '2009-12-13 05:17:49')[0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test name', '2009-12-13 05:18:54', 'testlink.com', '2009-12-13 05:18:54')[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:18:54', 980190962, '2009-12-13 05:18:54')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:18:54', 980190962, '2009-12-13 05:18:54')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:18:54', 980190962, '2009-12-13 05:18:54')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:18:54', 980190962, '2009-12-13 05:18:54')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:18:54', 980190962, '2009-12-13 05:18:54')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:18:54', 980190962, '2009-12-13 05:18:54')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:18:54', 980190962, '2009-12-13 05:18:54')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:18:54', 980190962, '2009-12-13 05:18:54')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:18:54', 980190962, '2009-12-13 05:18:54')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:18:54', 980190962, '2009-12-13 05:18:54')[0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test name', '2009-12-13 05:32:53', 'testlink.com', '2009-12-13 05:32:53')[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:32:53', 980190962, '2009-12-13 05:32:53')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:32:53', 980190962, '2009-12-13 05:32:53')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:32:53', 980190962, '2009-12-13 05:32:53')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:32:53', 980190962, '2009-12-13 05:32:53')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:32:53', 980190962, '2009-12-13 05:32:53')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:32:53', 980190962, '2009-12-13 05:32:53')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:32:53', 980190962, '2009-12-13 05:32:53')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:32:53', 980190962, '2009-12-13 05:32:53')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:32:53', 980190962, '2009-12-13 05:32:53')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:32:53', 980190962, '2009-12-13 05:32:53')[0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test name', '2009-12-13 05:35:52', 'testlink.com', '2009-12-13 05:35:52')[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:35:52', 980190962, '2009-12-13 05:35:52')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:35:52', 980190962, '2009-12-13 05:35:52')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:35:52', 980190962, '2009-12-13 05:35:52')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:35:52', 980190962, '2009-12-13 05:35:52')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:35:52', 980190962, '2009-12-13 05:35:52')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:35:52', 980190962, '2009-12-13 05:35:52')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:35:52', 980190962, '2009-12-13 05:35:52')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:35:52', 980190962, '2009-12-13 05:35:52')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:35:52', 980190962, '2009-12-13 05:35:52')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:35:52', 980190962, '2009-12-13 05:35:52')[0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test name', '2009-12-13 05:40:37', 'testlink.com', '2009-12-13 05:40:37')[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:40:37', 980190962, '2009-12-13 05:40:37')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:40:37', 980190962, '2009-12-13 05:40:37')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:40:37', 980190962, '2009-12-13 05:40:37')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:40:37', 980190962, '2009-12-13 05:40:37')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:40:37', 980190962, '2009-12-13 05:40:37')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:40:37', 980190962, '2009-12-13 05:40:37')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:40:37', 980190962, '2009-12-13 05:40:37')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:40:37', 980190962, '2009-12-13 05:40:37')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:40:37', 980190962, '2009-12-13 05:40:37')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:40:37', 980190962, '2009-12-13 05:40:37')[0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test name', '2009-12-13 05:41:12', 'testlink.com', '2009-12-13 05:41:12')[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:41:12', 980190962, '2009-12-13 05:41:12')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:41:12', 980190962, '2009-12-13 05:41:12')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:41:12', 980190962, '2009-12-13 05:41:12')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:41:12', 980190962, '2009-12-13 05:41:12')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:41:12', 980190962, '2009-12-13 05:41:12')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:41:12', 980190962, '2009-12-13 05:41:12')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:41:12', 980190962, '2009-12-13 05:41:12')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:41:12', 980190962, '2009-12-13 05:41:12')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:41:12', 980190962, '2009-12-13 05:41:12')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:41:12', 980190962, '2009-12-13 05:41:12')[0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test name', '2009-12-13 05:47:12', 'testlink.com', '2009-12-13 05:47:12')[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:47:12', 980190962, '2009-12-13 05:47:12')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:47:12', 980190962, '2009-12-13 05:47:12')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:47:12', 980190962, '2009-12-13 05:47:12')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:47:12', 980190962, '2009-12-13 05:47:12')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:47:12', 980190962, '2009-12-13 05:47:12')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:47:12', 980190962, '2009-12-13 05:47:12')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:47:12', 980190962, '2009-12-13 05:47:12')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:47:12', 980190962, '2009-12-13 05:47:12')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:47:12', 980190962, '2009-12-13 05:47:12')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:47:12', 980190962, '2009-12-13 05:47:12')[0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test name', '2009-12-13 05:48:37', 'testlink.com', '2009-12-13 05:48:37')[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (16.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:48:37', 980190962, '2009-12-13 05:48:37')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:48:37', 980190962, '2009-12-13 05:48:37')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:48:37', 980190962, '2009-12-13 05:48:37')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:48:37', 980190962, '2009-12-13 05:48:37')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:48:37', 980190962, '2009-12-13 05:48:37')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:48:37', 980190962, '2009-12-13 05:48:37')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:48:37', 980190962, '2009-12-13 05:48:37')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:48:37', 980190962, '2009-12-13 05:48:37')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:48:37', 980190962, '2009-12-13 05:48:37')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 05:48:37', 980190962, '2009-12-13 05:48:37')[0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "created_at") VALUES('test name', '2009-12-13 06:05:19', 'testlink.com', '2009-12-13 06:05:19')[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 06:05:19', 980190962, '2009-12-13 06:05:19')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 06:05:19', 980190962, '2009-12-13 06:05:19')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 06:05:19', 980190962, '2009-12-13 06:05:19')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 06:05:19', 980190962, '2009-12-13 06:05:19')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 06:05:19', 980190962, '2009-12-13 06:05:19')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 06:05:19', 980190962, '2009-12-13 06:05:19')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 06:05:19', 980190962, '2009-12-13 06:05:19')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 06:05:19', 980190962, '2009-12-13 06:05:19')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 06:05:19', 980190962, '2009-12-13 06:05:19')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "created_at") VALUES('2009-12-13 06:05:19', 980190962, '2009-12-13 06:05:19')[0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
