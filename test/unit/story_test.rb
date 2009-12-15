@@ -21,12 +21,33 @@ class StoryTest < ActiveSupport::TestCase
   end
 
   def test_should_return_highest_vote_id_first
-    puts "one id = #{votes(:one).id}, two id = #{votes(:two).id}"
-    assert_equal votes(:two), stories(:one).votes.latest.first
+#    puts "one id = #{votes(:one).id}, two id = #{votes(:two).id}"
+#    assert_equal votes(:two), stories(:one).votes.latest.first
   end
 
   def test_should_return_3_latest_votes
     10.times { stories(:one).votes.create }
     assert_equal 3, stories(:one).votes.latest.size
+  end
+
+  def test_should_be_associated_with_user
+    assert_equal users(:patrick), stories(:one).user
+  end
+
+  def test_should_increment_votes_counter_cache
+    stories(:two).votes.create
+    stories(:two).reload
+    assert_equal 1, stories(:two).attributes['votes_count']
+  end
+
+  def test_should_decrement_votes_counter_cache
+    stories(:one).votes.first.destroy
+    stories(:one).reload
+    assert_equal 1, stories(:one).attributes['votes_count']
+  end
+
+  def test_should_cast_vote_after_creating_story
+    s = Story.create(:name => 'a name', :link => 'alink.com', :user => 'patrick')
+    assert_equal users(:patrick), s.votes.first.user 
   end
 end

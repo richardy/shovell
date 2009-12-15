@@ -450,3 +450,1189 @@ Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/new]
   [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
   [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
   [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO "stories" ("name", "updated_at", "link", "user_id", "created_at") VALUES('test name', '2009-12-14 08:04:22', 'testlink.com', NULL, '2009-12-14 08:04:22')[0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-14 08:04:22', 980190962, NULL, '2009-12-14 08:04:22')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-14 08:04:22', 980190962, NULL, '2009-12-14 08:04:22')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-14 08:04:22', 980190962, NULL, '2009-12-14 08:04:22')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-14 08:04:22', 980190962, NULL, '2009-12-14 08:04:22')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-14 08:04:22', 980190962, NULL, '2009-12-14 08:04:22')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-14 08:04:22', 980190962, NULL, '2009-12-14 08:04:22')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-14 08:04:22', 980190962, NULL, '2009-12-14 08:04:22')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-14 08:04:22', 980190962, NULL, '2009-12-14 08:04:22')[0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-14 08:04:22', 980190962, NULL, '2009-12-14 08:04:22')[0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-14 08:04:22', 980190962, NULL, '2009-12-14 08:04:22')[0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "stories" WHERE ("stories".user_id = 746491307) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories".user_id = 746491307) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".user_id = 746491307) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 830138774) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".user_id = 830138774) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 830138774) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 298486374) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 830138774) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2009-12-14 19:25:47) [POST]
+  Parameters: {"login"=>"no such", "password"=>"user"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'no such' AND "users"."password" = 'user') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://test.host/sessions/create?login=no+such&password=user]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2009-12-14 19:25:47) [POST]
+  Parameters: {"login"=>"patrick", "password"=>"sekrit"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'patrick' AND "users"."password" = 'sekrit') LIMIT 1[0m
+Redirected to http://test.host/stories
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/sessions/create?login=patrick&password=sekrit]
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2009-12-14 19:25:47) [DELETE]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/destroy
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/sessions/create?login=patrick&password=sekrit]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2009-12-14 19:25:47) [POST]
+  Parameters: {"login"=>"patrick", "password"=>"sekrit"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'patrick' AND "users"."password" = 'sekrit') LIMIT 1[0m
+Redirected to http://test.host/stories
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/sessions/create?login=patrick&password=sekrit]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2009-12-14 19:25:47) [POST]
+  Parameters: {"login"=>"patrick", "password"=>"sekrit"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'patrick' AND "users"."password" = 'sekrit') LIMIT 1[0m
+Redirected to http://test.host/stories/new
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/sessions/create?login=patrick&password=sekrit]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2009-12-14 19:25:47) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-14 19:25:47) [POST]
+  Parameters: {"story"=>{"name"=>"test story", "link"=>"www.link.com"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;36;1mStory Create (16.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "user_id", "created_at") VALUES('test story', '2009-12-14 08:25:47', 'www.link.com', 746491307, '2009-12-14 08:25:47')[0m
+Redirected to http://test.host/stories
+Completed in 16ms (DB: 16) | 302 Found [http://test.host/stories?story%5Blink%5D=www.link.com&story%5Bname%5D=test+story]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-14 19:25:47) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" ORDER BY RANDOM() LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-14 19:25:47) [GET]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" ORDER BY RANDOM() LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/stories]
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-14 19:25:47) [GET]
+Redirected to http://test.host/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/stories/new]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-14 19:25:47) [POST]
+  Parameters: {"story"=>{"name"=>"story name"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://test.host/stories?story%5Bname%5D=story+name]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-14 19:25:47) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" ORDER BY RANDOM() LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-14 19:25:47) [GET]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" ORDER BY RANDOM() LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-14 19:25:47) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/new]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-14 19:25:47) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/new]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#show (for 0.0.0.0 at 2009-12-14 19:25:47) [GET]
+  Parameters: {"id"=>#<Story id: 980190962, name: "name", link: "atestlink.com", created_at: "2009-12-14 08:25:47", updated_at: "2009-12-14 08:25:47", user_id: 746491307>}
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 980190962) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (359.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Completed in 359ms (View: 359, DB: 0) | 200 OK [http://test.host/stories/980190962-name]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#show (for 0.0.0.0 at 2009-12-14 19:25:47) [GET]
+  Parameters: {"id"=>#<Story id: 980190962, name: "name", link: "atestlink.com", created_at: "2009-12-14 08:25:47", updated_at: "2009-12-14 08:25:47", user_id: 746491307>}
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 980190962) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/980190962-name]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#show (for 0.0.0.0 at 2009-12-14 19:25:48) [GET]
+  Parameters: {"id"=>#<Story id: 980190962, name: "name", link: "atestlink.com", created_at: "2009-12-14 08:25:47", updated_at: "2009-12-14 08:25:47", user_id: 746491307>}
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 980190962) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (15.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://test.host/stories/980190962-name]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-14 19:25:48) [POST]
+  Parameters: {"story"=>{"name"=>"story with user", "link"=>"http://www.story-with-user.com/"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO "stories" ("name", "updated_at", "link", "user_id", "created_at") VALUES('story with user', '2009-12-14 08:25:48', 'http://www.story-with-user.com/', 746491307, '2009-12-14 08:25:48')[0m
+Redirected to http://test.host/stories
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/stories?story%5Blink%5D=http%3A%2F%2Fwww.story-with-user.com%2F&story%5Bname%5D=story+with+user]
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2009-12-14 19:27:43) [POST]
+  Parameters: {"login"=>"no such", "password"=>"user"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'no such' AND "users"."password" = 'user') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://test.host/sessions/create?login=no+such&password=user]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2009-12-14 19:27:43) [POST]
+  Parameters: {"login"=>"patrick", "password"=>"sekrit"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'patrick' AND "users"."password" = 'sekrit') LIMIT 1[0m
+Redirected to http://test.host/stories
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/sessions/create?login=patrick&password=sekrit]
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2009-12-14 19:27:43) [DELETE]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/destroy
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://test.host/sessions/create?login=patrick&password=sekrit]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2009-12-14 19:27:43) [POST]
+  Parameters: {"login"=>"patrick", "password"=>"sekrit"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'patrick' AND "users"."password" = 'sekrit') LIMIT 1[0m
+Redirected to http://test.host/stories
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/sessions/create?login=patrick&password=sekrit]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2009-12-14 19:27:43) [POST]
+  Parameters: {"login"=>"patrick", "password"=>"sekrit"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'patrick' AND "users"."password" = 'sekrit') LIMIT 1[0m
+Redirected to http://test.host/stories/new
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/sessions/create?login=patrick&password=sekrit]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2009-12-14 19:27:43) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-14 19:27:43) [POST]
+  Parameters: {"story"=>{"name"=>"test story", "link"=>"www.link.com"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "link", "user_id", "created_at") VALUES('test story', '2009-12-14 08:27:43', 'www.link.com', 746491307, '2009-12-14 08:27:43')[0m
+Redirected to http://test.host/stories
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/stories?story%5Blink%5D=www.link.com&story%5Bname%5D=test+story]
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-14 19:27:43) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" ORDER BY RANDOM() LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 0ms (View: 0, DB: 16) | 200 OK [http://test.host/stories]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-14 19:27:43) [GET]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" ORDER BY RANDOM() LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories]
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-14 19:27:43) [GET]
+Redirected to http://test.host/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/stories/new]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-14 19:27:43) [POST]
+  Parameters: {"story"=>{"name"=>"story name"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/stories?story%5Bname%5D=story+name]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-14 19:27:43) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" ORDER BY RANDOM() LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-14 19:27:43) [GET]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" ORDER BY RANDOM() LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-14 19:27:43) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/new]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-14 19:27:43) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/new]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#show (for 0.0.0.0 at 2009-12-14 19:27:43) [GET]
+  Parameters: {"id"=>#<Story id: 980190962, name: "name", link: "atestlink.com", created_at: "2009-12-14 08:27:43", updated_at: "2009-12-14 08:27:43", user_id: 746491307>}
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 980190962) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (250.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Completed in 250ms (View: 250, DB: 0) | 200 OK [http://test.host/stories/980190962-name]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#show (for 0.0.0.0 at 2009-12-14 19:27:44) [GET]
+  Parameters: {"id"=>#<Story id: 980190962, name: "name", link: "atestlink.com", created_at: "2009-12-14 08:27:43", updated_at: "2009-12-14 08:27:43", user_id: 746491307>}
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 980190962) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/980190962-name]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#show (for 0.0.0.0 at 2009-12-14 19:27:44) [GET]
+  Parameters: {"id"=>#<Story id: 980190962, name: "name", link: "atestlink.com", created_at: "2009-12-14 08:27:43", updated_at: "2009-12-14 08:27:43", user_id: 746491307>}
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 980190962) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 980190962) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/980190962-name]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-14 19:27:44) [POST]
+  Parameters: {"story"=>{"name"=>"story with user", "link"=>"http://www.story-with-user.com/"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO "stories" ("name", "updated_at", "link", "user_id", "created_at") VALUES('story with user', '2009-12-14 08:27:44', 'http://www.story-with-user.com/', 746491307, '2009-12-14 08:27:44')[0m
+Redirected to http://test.host/stories
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/stories?story%5Blink%5D=http%3A%2F%2Fwww.story-with-user.com%2F&story%5Bname%5D=story+with+user]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 298486374) [0m
+
+
+Processing VotesController#create (for 0.0.0.0 at 2009-12-14 19:27:44) [POST]
+  Parameters: {"story_id"=>#<Story id: 298486374, name: "MyString", link: "MyString", created_at: "2009-12-14 08:27:43", updated_at: "2009-12-14 08:27:43", user_id: 746491307>}
+  [4;35;1mStory Load (16.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-14 08:27:44', 298486374, NULL, '2009-12-14 08:27:44')[0m
+Redirected to http://test.host/stories/298486374-mystring
+Completed in 16ms (DB: 16) | 302 Found [http://test.host/stories/298486374-mystring/votes]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 298486374) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+
+
+Processing VotesController#create (for 0.0.0.0 at 2009-12-14 19:27:44) [POST]
+  Parameters: {"story_id"=>#<Story id: 298486374, name: "MyString", link: "MyString", created_at: "2009-12-14 08:27:43", updated_at: "2009-12-14 08:27:43", user_id: 746491307>}
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-14 08:27:44', 298486374, NULL, '2009-12-14 08:27:44')[0m
+Redirected to http://test.host/stories/298486374-mystring
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/stories/298486374-mystring/votes]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+
+
+Processing VotesController#create (for 0.0.0.0 at 2009-12-14 19:27:44) [POST]
+  Parameters: {"story_id"=>#<Story id: 298486374, name: "MyString", link: "MyString", created_at: "2009-12-14 08:27:43", updated_at: "2009-12-14 08:27:43", user_id: 746491307>}
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-14 08:27:44', 298486374, NULL, '2009-12-14 08:27:44')[0m
+Rendering votes/create
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 298486374) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 298486374) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/298486374-mystring/votes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStories (20091203004749)
+Migrating to CreateVotes (20091204105855)
+Migrating to CreateUsers (20091213061942)
+Migrating to AddCounterCacheToStories (20091214223244)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mALTER TABLE "stories" ADD "votes_count" integer DEFAULT 0[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 298486374) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) [0m
+  [4;35;1mStory Update (0.0ms)[0m   [0mUPDATE "stories" SET "updated_at" = '2009-12-15 03:42:57' WHERE "id" = 980190962[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091214223244')[0m
+Migrating to AddDescriptionToStories (20091215004349)
+  [4;35;1mSQL (0.0ms)[0m   [0mALTER TABLE "stories" ADD "description" text[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091215004349')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("stories")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("votes")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2009-12-15 14:43:27) [POST]
+  Parameters: {"login"=>"no such", "password"=>"user"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'no such' AND "users"."password" = 'user') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://test.host/session?login=no+such&password=user]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2009-12-15 14:43:27) [POST]
+  Parameters: {"login"=>"patrick", "password"=>"sekrit"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'patrick' AND "users"."password" = 'sekrit') LIMIT 1[0m
+Redirected to http://test.host/stories
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/session?login=patrick&password=sekrit]
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2009-12-15 14:43:27) [DELETE]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/destroy
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/session?login=patrick&password=sekrit]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2009-12-15 14:43:27) [POST]
+  Parameters: {"login"=>"patrick", "password"=>"sekrit"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'patrick' AND "users"."password" = 'sekrit') LIMIT 1[0m
+Redirected to http://test.host/stories
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/session?login=patrick&password=sekrit]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2009-12-15 14:43:27) [POST]
+  Parameters: {"login"=>"patrick", "password"=>"sekrit"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'patrick' AND "users"."password" = 'sekrit') LIMIT 1[0m
+Redirected to http://test.host/stories/new
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/session?login=patrick&password=sekrit]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2009-12-15 14:43:27) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/session/new]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-15 14:43:27) [POST]
+  Parameters: {"story"=>{"name"=>"test story", "link"=>"http://www.test.com/"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "votes_count", "description", "link", "user_id", "created_at") VALUES('test story', '2009-12-15 03:43:27', 0, NULL, 'http://www.test.com/', 746491307, '2009-12-15 03:43:27')[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 03:43:27', 980190963, 746491307, '2009-12-15 03:43:27')[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190963) [0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 980190963) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190963) [0m
+Redirected to http://test.host/stories/980190963-test-story
+Completed in 16ms (DB: 0) | 302 Found [http://test.host/stories?story%5Blink%5D=http%3A%2F%2Fwww.test.com%2F&story%5Bname%5D=test+story]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-15 14:43:27) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 830138774) [0m
+Rendered stories/_story (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-15 14:43:27) [GET]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 830138774) [0m
+Rendered stories/_story (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#show (for 0.0.0.0 at 2009-12-15 14:43:27) [GET]
+  Parameters: {"id"=>#<Story id: 980190962, name: "name", link: "atestlink.com", created_at: "2009-12-15 03:43:27", updated_at: "2009-12-15 03:43:27", user_id: 746491307, votes_count: 2, description: nil>}
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (250.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Completed in 250ms (View: 250, DB: 0) | 200 OK [http://test.host/stories/980190962-name]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-15 14:43:28) [GET]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 830138774) [0m
+Rendered stories/_story (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 141401331) [0m
+
+
+Processing StoriesController#bin (for 0.0.0.0 at 2009-12-15 14:43:28) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE (votes_count < 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/bin]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-15 14:43:28) [GET]
+Redirected to http://test.host/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/stories/new]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-15 14:43:28) [POST]
+  Parameters: {"story"=>{"name"=>"story without a link"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories?story%5Bname%5D=story+without+a+link]
+
+
+Processing StoriesController#bin (for 0.0.0.0 at 2009-12-15 14:43:28) [GET]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE (votes_count < 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/bin]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-15 14:43:28) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 830138774) [0m
+Rendered stories/_story (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-15 14:43:28) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 830138774) [0m
+Rendered stories/_story (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-15 14:43:28) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/stories/new]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-15 14:43:28) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/new]
+
+
+Processing StoriesController#bin (for 0.0.0.0 at 2009-12-15 14:43:28) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE (votes_count < 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/bin]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#show (for 0.0.0.0 at 2009-12-15 14:43:28) [GET]
+  Parameters: {"id"=>#<Story id: 980190962, name: "name", link: "atestlink.com", created_at: "2009-12-15 03:43:27", updated_at: "2009-12-15 03:43:27", user_id: 746491307, votes_count: 2, description: nil>}
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://test.host/stories/980190962-name]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-15 14:43:28) [GET]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 830138774) [0m
+Rendered stories/_story (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#show (for 0.0.0.0 at 2009-12-15 14:43:28) [GET]
+  Parameters: {"id"=>#<Story id: 980190962, name: "name", link: "atestlink.com", created_at: "2009-12-15 03:43:27", updated_at: "2009-12-15 03:43:27", user_id: 746491307, votes_count: 2, description: nil>}
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/980190962-name]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#show (for 0.0.0.0 at 2009-12-15 14:43:28) [GET]
+  Parameters: {"id"=>#<Story id: 980190962, name: "name", link: "atestlink.com", created_at: "2009-12-15 03:43:27", updated_at: "2009-12-15 03:43:27", user_id: 746491307, votes_count: 2, description: nil>}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;36;1mVote Load (16.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://test.host/stories/980190962-name]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-15 14:43:28) [POST]
+  Parameters: {"story"=>{"name"=>"story with user", "link"=>"http://www.story-with-user.com/"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "votes_count", "description", "link", "user_id", "created_at") VALUES('story with user', '2009-12-15 03:43:28', 0, NULL, 'http://www.story-with-user.com/', 746491307, '2009-12-15 03:43:28')[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 03:43:28', 980190963, 746491307, '2009-12-15 03:43:28')[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190963) [0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 980190963) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190963) [0m
+Redirected to http://test.host/stories/980190963-story-with-user
+Completed in 16ms (DB: 0) | 302 Found [http://test.host/stories?story%5Blink%5D=http%3A%2F%2Fwww.story-with-user.com%2F&story%5Bname%5D=story+with+user]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-12-15 14:43:28) [GET]
+  Parameters: {"id"=>#<User id: 746491307, login: "patrick", password: "sekrit", name: "Patrick Lenz", email: "patrick@limited-overload.de", created_at: "2009-12-15 03:43:27", updated_at: "2009-12-15 03:43:27">}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT "stories".* FROM "stories" INNER JOIN "votes" ON "stories".id = "votes".story_id WHERE (("votes".user_id = 746491307)) ORDER BY votes.id DESC LIMIT 6[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories".user_id = 746491307) ORDER BY stories.id DESC LIMIT 6[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://test.host/users/746491307-patrick]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-12-15 14:43:28) [GET]
+  Parameters: {"id"=>#<User id: 746491307, login: "patrick", password: "sekrit", name: "Patrick Lenz", email: "patrick@limited-overload.de", created_at: "2009-12-15 03:43:27", updated_at: "2009-12-15 03:43:27">}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT "stories".* FROM "stories" INNER JOIN "votes" ON "stories".id = "votes".story_id WHERE (("votes".user_id = 746491307)) ORDER BY votes.id DESC LIMIT 6[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories".user_id = 746491307) ORDER BY stories.id DESC LIMIT 6[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (62.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://test.host/users/746491307-patrick]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-12-15 14:43:28) [GET]
+  Parameters: {"id"=>#<User id: 746491307, login: "patrick", password: "sekrit", name: "Patrick Lenz", email: "patrick@limited-overload.de", created_at: "2009-12-15 03:43:27", updated_at: "2009-12-15 03:43:27">}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT "stories".* FROM "stories" INNER JOIN "votes" ON "stories".id = "votes".story_id WHERE (("votes".user_id = 746491307)) ORDER BY votes.id DESC LIMIT 6[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories".user_id = 746491307) ORDER BY stories.id DESC LIMIT 6[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://test.host/users/746491307-patrick]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing VotesController#create (for 0.0.0.0 at 2009-12-15 14:43:28) [POST]
+  Parameters: {"story_id"=>#<Story id: 298486374, name: "MyString", link: "MyString", created_at: "2009-12-15 03:43:27", updated_at: "2009-12-15 03:43:27", user_id: 746491307, votes_count: 0, description: nil>}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 03:43:28', 298486374, 746491307, '2009-12-15 03:43:28')[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mStory Update (0.0ms)[0m   [0mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 298486374) [0m
+Redirected to http://test.host/stories/298486374-mystring
+Completed in 16ms (DB: 0) | 302 Found [http://test.host/stories/298486374-mystring/votes]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing VotesController#create (for 0.0.0.0 at 2009-12-15 14:43:28) [POST]
+  Parameters: {"story_id"=>#<Story id: 298486374, name: "MyString", link: "MyString", created_at: "2009-12-15 03:43:27", updated_at: "2009-12-15 03:43:27", user_id: 746491307, votes_count: 0, description: nil>}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 03:43:28', 298486374, 746491307, '2009-12-15 03:43:28')[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mStory Update (0.0ms)[0m   [0mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 298486374) [0m
+Redirected to http://test.host/stories/298486374-mystring
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/stories/298486374-mystring/votes]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing VotesController#create (for 0.0.0.0 at 2009-12-15 14:43:28) [POST]
+  Parameters: {"story_id"=>#<Story id: 298486374, name: "MyString", link: "MyString", created_at: "2009-12-15 03:43:27", updated_at: "2009-12-15 03:43:27", user_id: 746491307, votes_count: 0, description: nil>}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 03:43:28', 298486374, 746491307, '2009-12-15 03:43:28')[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 298486374) [0m
+Rendering votes/create
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 298486374) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/298486374-mystring/votes]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing VotesController#create (for 0.0.0.0 at 2009-12-15 14:43:28) [POST]
+  Parameters: {"story_id"=>#<Story id: 298486374, name: "MyString", link: "MyString", created_at: "2009-12-15 03:43:27", updated_at: "2009-12-15 03:43:27", user_id: 746491307, votes_count: 0, description: nil>}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 03:43:28', 298486374, 746491307, '2009-12-15 03:43:28')[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mStory Update (0.0ms)[0m   [0mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 298486374) [0m
+Redirected to http://test.host/stories/298486374-mystring
+Completed in 16ms (DB: 0) | 302 Found [http://test.host/stories/298486374-mystring/votes]
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 298486374) ORDER BY votes.id DESC LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2009-12-15 14:46:38) [POST]
+  Parameters: {"login"=>"no such", "password"=>"user"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'no such' AND "users"."password" = 'user') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://test.host/session?login=no+such&password=user]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2009-12-15 14:46:38) [POST]
+  Parameters: {"login"=>"patrick", "password"=>"sekrit"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'patrick' AND "users"."password" = 'sekrit') LIMIT 1[0m
+Redirected to http://test.host/stories
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/session?login=patrick&password=sekrit]
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2009-12-15 14:46:38) [DELETE]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/destroy
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/session?login=patrick&password=sekrit]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2009-12-15 14:46:38) [POST]
+  Parameters: {"login"=>"patrick", "password"=>"sekrit"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'patrick' AND "users"."password" = 'sekrit') LIMIT 1[0m
+Redirected to http://test.host/stories
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/session?login=patrick&password=sekrit]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2009-12-15 14:46:38) [POST]
+  Parameters: {"login"=>"patrick", "password"=>"sekrit"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'patrick' AND "users"."password" = 'sekrit') LIMIT 1[0m
+Redirected to http://test.host/stories/new
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/session?login=patrick&password=sekrit]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2009-12-15 14:46:38) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/session/new]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-15 14:46:38) [POST]
+  Parameters: {"story"=>{"name"=>"test story", "link"=>"http://www.test.com/"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "votes_count", "description", "link", "user_id", "created_at") VALUES('test story', '2009-12-15 03:46:38', 0, NULL, 'http://www.test.com/', 746491307, '2009-12-15 03:46:38')[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 03:46:38', 980190963, 746491307, '2009-12-15 03:46:38')[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190963) [0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 980190963) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190963) [0m
+Redirected to http://test.host/stories
+Completed in 15ms (DB: 0) | 302 Found [http://test.host/stories?story%5Blink%5D=http%3A%2F%2Fwww.test.com%2F&story%5Bname%5D=test+story]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-15 14:46:38) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 830138774) [0m
+Rendered stories/_story (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-15 14:46:38) [GET]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 830138774) [0m
+Rendered stories/_story (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#show (for 0.0.0.0 at 2009-12-15 14:46:38) [GET]
+  Parameters: {"id"=>#<Story id: 980190962, name: "name", link: "atestlink.com", created_at: "2009-12-15 03:46:38", updated_at: "2009-12-15 03:46:38", user_id: 746491307, votes_count: 2, description: nil>}
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (250.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Completed in 250ms (View: 250, DB: 0) | 200 OK [http://test.host/stories/980190962-name]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-15 14:46:39) [GET]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 830138774) [0m
+Rendered stories/_story (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 141401331) [0m
+
+
+Processing StoriesController#bin (for 0.0.0.0 at 2009-12-15 14:46:39) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE (votes_count < 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (16.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/stories/bin]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-15 14:46:39) [GET]
+Redirected to http://test.host/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/stories/new]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-15 14:46:39) [POST]
+  Parameters: {"story"=>{"name"=>"story without a link"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://test.host/stories?story%5Bname%5D=story+without+a+link]
+
+
+Processing StoriesController#bin (for 0.0.0.0 at 2009-12-15 14:46:39) [GET]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE (votes_count < 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/bin]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-15 14:46:39) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 830138774) [0m
+Rendered stories/_story (16.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-15 14:46:39) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 830138774) [0m
+Rendered stories/_story (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-15 14:46:39) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/stories/new]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2009-12-15 14:46:39) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/new]
+
+
+Processing StoriesController#bin (for 0.0.0.0 at 2009-12-15 14:46:39) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE (votes_count < 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/bin]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#show (for 0.0.0.0 at 2009-12-15 14:46:39) [GET]
+  Parameters: {"id"=>#<Story id: 980190962, name: "name", link: "atestlink.com", created_at: "2009-12-15 03:46:38", updated_at: "2009-12-15 03:46:38", user_id: 746491307, votes_count: 2, description: nil>}
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/stories/980190962-name]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2009-12-15 14:46:39) [GET]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 830138774) [0m
+Rendered stories/_story (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#show (for 0.0.0.0 at 2009-12-15 14:46:39) [GET]
+  Parameters: {"id"=>#<Story id: 980190962, name: "name", link: "atestlink.com", created_at: "2009-12-15 03:46:38", updated_at: "2009-12-15 03:46:38", user_id: 746491307, votes_count: 2, description: nil>}
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/980190962-name]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#show (for 0.0.0.0 at 2009-12-15 14:46:39) [GET]
+  Parameters: {"id"=>#<Story id: 980190962, name: "name", link: "atestlink.com", created_at: "2009-12-15 03:46:38", updated_at: "2009-12-15 03:46:38", user_id: 746491307, votes_count: 2, description: nil>}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 980190962) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/980190962-name]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2009-12-15 14:46:39) [POST]
+  Parameters: {"story"=>{"name"=>"story with user", "link"=>"http://www.story-with-user.com/"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "votes_count", "description", "link", "user_id", "created_at") VALUES('story with user', '2009-12-15 03:46:39', 0, NULL, 'http://www.story-with-user.com/', 746491307, '2009-12-15 03:46:39')[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 03:46:39', 980190963, 746491307, '2009-12-15 03:46:39')[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190963) [0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 980190963) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 980190963) [0m
+Redirected to http://test.host/stories
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/stories?story%5Blink%5D=http%3A%2F%2Fwww.story-with-user.com%2F&story%5Bname%5D=story+with+user]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-12-15 14:46:39) [GET]
+  Parameters: {"id"=>#<User id: 746491307, login: "patrick", password: "sekrit", name: "Patrick Lenz", email: "patrick@limited-overload.de", created_at: "2009-12-15 03:46:38", updated_at: "2009-12-15 03:46:38">}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT "stories".* FROM "stories" INNER JOIN "votes" ON "stories".id = "votes".story_id WHERE (("votes".user_id = 746491307)) ORDER BY votes.id DESC LIMIT 6[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories".user_id = 746491307) ORDER BY stories.id DESC LIMIT 6[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/users/746491307-patrick]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-12-15 14:46:39) [GET]
+  Parameters: {"id"=>#<User id: 746491307, login: "patrick", password: "sekrit", name: "Patrick Lenz", email: "patrick@limited-overload.de", created_at: "2009-12-15 03:46:38", updated_at: "2009-12-15 03:46:38">}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT "stories".* FROM "stories" INNER JOIN "votes" ON "stories".id = "votes".story_id WHERE (("votes".user_id = 746491307)) ORDER BY votes.id DESC LIMIT 6[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories".user_id = 746491307) ORDER BY stories.id DESC LIMIT 6[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/users/746491307-patrick]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-12-15 14:46:39) [GET]
+  Parameters: {"id"=>#<User id: 746491307, login: "patrick", password: "sekrit", name: "Patrick Lenz", email: "patrick@limited-overload.de", created_at: "2009-12-15 03:46:38", updated_at: "2009-12-15 03:46:38">}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT "stories".* FROM "stories" INNER JOIN "votes" ON "stories".id = "votes".story_id WHERE (("votes".user_id = 746491307)) ORDER BY votes.id DESC LIMIT 6[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories".user_id = 746491307) ORDER BY stories.id DESC LIMIT 6[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+Rendered stories/_story (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/users/746491307-patrick]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing VotesController#create (for 0.0.0.0 at 2009-12-15 14:46:39) [POST]
+  Parameters: {"story_id"=>#<Story id: 298486374, name: "MyString", link: "MyString", created_at: "2009-12-15 03:46:38", updated_at: "2009-12-15 03:46:38", user_id: 746491307, votes_count: 0, description: nil>}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 03:46:39', 298486374, 746491307, '2009-12-15 03:46:39')[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mStory Update (0.0ms)[0m   [0mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 298486374) [0m
+Redirected to http://test.host/stories/298486374-mystring
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/stories/298486374-mystring/votes]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing VotesController#create (for 0.0.0.0 at 2009-12-15 14:46:39) [POST]
+  Parameters: {"story_id"=>#<Story id: 298486374, name: "MyString", link: "MyString", created_at: "2009-12-15 03:46:38", updated_at: "2009-12-15 03:46:38", user_id: 746491307, votes_count: 0, description: nil>}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 03:46:39', 298486374, 746491307, '2009-12-15 03:46:39')[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mStory Update (0.0ms)[0m   [0mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 298486374) [0m
+Redirected to http://test.host/stories/298486374-mystring
+Completed in 78ms (DB: 0) | 302 Found [http://test.host/stories/298486374-mystring/votes]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing VotesController#create (for 0.0.0.0 at 2009-12-15 14:46:39) [POST]
+  Parameters: {"story_id"=>#<Story id: 298486374, name: "MyString", link: "MyString", created_at: "2009-12-15 03:46:38", updated_at: "2009-12-15 03:46:38", user_id: 746491307, votes_count: 0, description: nil>}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 03:46:39', 298486374, 746491307, '2009-12-15 03:46:39')[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 298486374) [0m
+Rendering votes/create
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 298486374) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://test.host/stories/298486374-mystring/votes]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m
+
+
+Processing VotesController#create (for 0.0.0.0 at 2009-12-15 14:46:39) [POST]
+  Parameters: {"story_id"=>#<Story id: 298486374, name: "MyString", link: "MyString", created_at: "2009-12-15 03:46:38", updated_at: "2009-12-15 03:46:38", user_id: 746491307, votes_count: 0, description: nil>}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 03:46:39', 298486374, 746491307, '2009-12-15 03:46:39')[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 298486374) [0m
+  [4;35;1mStory Update (0.0ms)[0m   [0mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 298486374) [0m
+Redirected to http://test.host/stories/298486374-mystring
+Completed in 16ms (DB: 0) | 302 Found [http://test.host/stories/298486374-mystring/votes]
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 298486374) ORDER BY votes.id DESC LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 746491307) [0m

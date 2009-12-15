@@ -1480,3 +1480,828 @@ Rendering stories/show
   [4;35;1mSQL (16.0ms)[0m   [0mSELECT count(*) AS count_all FROM "votes" WHERE ("votes".story_id = 7) [0m
   [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
 Completed in 32ms (View: 0, DB: 16) | 200 OK [http://localhost/stories/7-name2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE "stories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "link" varchar(255), "created_at" datetime, "updated_at" datetime, "user_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "password" varchar(255), "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCREATE TABLE "votes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "story_id" integer, "created_at" datetime, "updated_at" datetime, "user_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (110.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (62.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091213061942')[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20091203004749')[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091204105855')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStories (20091203004749)
+Migrating to CreateVotes (20091204105855)
+Migrating to CreateUsers (20091213061942)
+Migrating to AddCounterCacheToStories (20091214223244)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStories (20091203004749)
+Migrating to CreateVotes (20091204105855)
+Migrating to CreateUsers (20091213061942)
+Migrating to AddCounterCacheToStories (20091214223244)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mALTER TABLE "stories" ADD "votes_count" integer DEFAULT 0[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 5) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 6) [0m
+  [4;35;1mStory Update (0.0ms)[0m   [0mUPDATE "stories" SET "votes_count" = 1, "updated_at" = '2009-12-14 22:56:31' WHERE "id" = 6[0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 7) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091214223244')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("stories")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("votes")[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2009-12-15 11:22:10) [GET]
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 406ms (View: 109, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StoriesController#bin (for 127.0.0.1 at 2009-12-15 11:22:15) [GET]
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE (votes_count < 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (16.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/stories/bin]
+
+
+Processing StoriesController#show (for 127.0.0.1 at 2009-12-15 11:22:27) [GET]
+  Parameters: {"id"=>"6-name"}
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 6) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (516.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 610ms (View: 594, DB: 0) | 200 OK [http://localhost/stories/6-name]
+
+
+Processing VotesController#create (for 127.0.0.1 at 2009-12-15 11:22:29) [POST]
+  Parameters: {"commit"=>"shove it", "authenticity_token"=>"Z2UKRkyciwHaNJGgQDlhpnPY2AMOtFT/KalXZlaJ0Ds=", "story_id"=>"6-name"}
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 00:22:29', 6, NULL, '2009-12-15 00:22:29')[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+  [4;35;1mStory Update (0.0ms)[0m   [0mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 6) [0m
+Rendering votes/create
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 6) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+Completed in 94ms (View: 15, DB: 0) | 200 OK [http://localhost/stories/6-name/votes]
+
+
+Processing StoriesController#show (for 127.0.0.1 at 2009-12-15 11:24:13) [GET]
+  Parameters: {"id"=>"6-name"}
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 6) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/stories/6-name]
+
+
+Processing VotesController#create (for 127.0.0.1 at 2009-12-15 11:24:14) [POST]
+  Parameters: {"commit"=>"shove it", "authenticity_token"=>"Z2UKRkyciwHaNJGgQDlhpnPY2AMOtFT/KalXZlaJ0Ds=", "story_id"=>"6-name"}
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+  [4;36;1mVote Create (16.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 00:24:14', 6, NULL, '2009-12-15 00:24:14')[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 6) [0m
+Rendering votes/create
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 6) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+Completed in 156ms (View: 63, DB: 16) | 200 OK [http://localhost/stories/6-name/votes]
+
+
+Processing StoriesController#show (for 127.0.0.1 at 2009-12-15 11:34:45) [GET]
+  Parameters: {"id"=>"6-name"}
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 6) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/stories/6-name]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-15 11:36:06) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-12-15 11:36:10) [POST]
+  Parameters: {"commit"=>"login", "authenticity_token"=>"Z2UKRkyciwHaNJGgQDlhpnPY2AMOtFT/KalXZlaJ0Ds=", "login"=>"rich", "password"=>"rich"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'rich' AND "users"."password" = 'rich') LIMIT 1[0m
+Redirected to http://localhost:3000/stories
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2009-12-15 11:36:10) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/stories]
+
+
+Processing StoriesController#bin (for 127.0.0.1 at 2009-12-15 11:36:12) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE (votes_count < 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (16.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/stories/bin]
+
+
+Processing StoriesController#show (for 127.0.0.1 at 2009-12-15 11:36:14) [GET]
+  Parameters: {"id"=>"6-name"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;36;1mVote Load (15.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 6) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 31ms (View: 0, DB: 15) | 200 OK [http://localhost/stories/6-name]
+
+
+Processing VotesController#create (for 127.0.0.1 at 2009-12-15 11:36:15) [POST]
+  Parameters: {"commit"=>"shove it", "authenticity_token"=>"Z2UKRkyciwHaNJGgQDlhpnPY2AMOtFT/KalXZlaJ0Ds=", "story_id"=>"6-name"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 00:36:15', 6, 1, '2009-12-15 00:36:15')[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 6) [0m
+Rendering votes/create
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 6) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+Completed in 141ms (View: 16, DB: 0) | 200 OK [http://localhost/stories/6-name/votes]
+
+
+Processing VotesController#create (for 127.0.0.1 at 2009-12-15 11:36:16) [POST]
+  Parameters: {"commit"=>"shove it", "authenticity_token"=>"Z2UKRkyciwHaNJGgQDlhpnPY2AMOtFT/KalXZlaJ0Ds=", "story_id"=>"6-name"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+  [4;35;1mVote Create (0.0ms)[0m   [0mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 00:36:16', 6, 1, '2009-12-15 00:36:16')[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+  [4;35;1mStory Update (0.0ms)[0m   [0mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 6) [0m
+Rendering votes/create
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 6) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+Completed in 110ms (View: 16, DB: 0) | 200 OK [http://localhost/stories/6-name/votes]
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2009-12-15 11:36:17) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/stories]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStories (20091203004749)
+Migrating to CreateVotes (20091204105855)
+Migrating to CreateUsers (20091213061942)
+Migrating to AddCounterCacheToStories (20091214223244)
+Migrating to AddDescriptionToStories (20091215004349)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mALTER TABLE "stories" ADD "description" text[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091215004349')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("stories")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("votes")[0m
+
+
+Processing StoriesController#new (for 127.0.0.1 at 2009-12-15 11:47:10) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/stories/new]
+
+
+Processing StoriesController#new (for 127.0.0.1 at 2009-12-15 11:47:19) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/stories/new]
+
+
+Processing StoriesController#create (for 127.0.0.1 at 2009-12-15 11:47:33) [POST]
+  Parameters: {"commit"=>"Save changes", "story"=>{"name"=>"a new link", "description"=>"this is  the description for a new link.", "link"=>"www.anewlink.com"}, "authenticity_token"=>"Z2UKRkyciwHaNJGgQDlhpnPY2AMOtFT/KalXZlaJ0Ds="}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "votes_count", "description", "link", "user_id", "created_at") VALUES('a new link', '2009-12-15 00:47:33', 0, 'this is the description for a new link.', 'www.anewlink.com', 1, '2009-12-15 00:47:33')[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 00:47:33', 8, 1, '2009-12-15 00:47:33')[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 8) [0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 8) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 8) [0m
+Redirected to http://localhost:3000/stories
+Completed in 140ms (DB: 0) | 302 Found [http://localhost/stories]
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2009-12-15 11:47:33) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/stories]
+
+
+Processing StoriesController#bin (for 127.0.0.1 at 2009-12-15 11:47:38) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE (votes_count < 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/stories/bin]
+
+
+Processing StoriesController#show (for 127.0.0.1 at 2009-12-15 11:47:40) [GET]
+  Parameters: {"id"=>"8-a-new-link"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 8) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (47.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 94ms (View: 78, DB: 16) | 200 OK [http://localhost/stories/8-a-new-link]
+
+
+Processing StoriesController#new (for 127.0.0.1 at 2009-12-15 11:48:37) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/stories/new]
+
+
+Processing StoriesController#create (for 127.0.0.1 at 2009-12-15 11:48:42) [POST]
+  Parameters: {"commit"=>"Save changes", "story"=>{"name"=>"asdf", "description"=>"asegaseg saegfasef sefes", "link"=>"geas.com"}, "authenticity_token"=>"Z2UKRkyciwHaNJGgQDlhpnPY2AMOtFT/KalXZlaJ0Ds="}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mStory Create (15.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "votes_count", "description", "link", "user_id", "created_at") VALUES('asdf', '2009-12-15 00:48:42', 0, 'asegaseg saegfasef sefes', 'geas.com', 1, '2009-12-15 00:48:42')[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 00:48:42', 9, 1, '2009-12-15 00:48:42')[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 9) [0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 9) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 9) [0m
+
+ActionController::RoutingError (story_url failed to generate from {:controller=>"stories", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["stories", :id] - are they all satisfied?):
+  (eval):16:in `story_path'
+  app/controllers/stories_controller.rb:16:in `create'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#new (for 127.0.0.1 at 2009-12-15 11:49:09) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/stories/new]
+
+
+Processing StoriesController#create (for 127.0.0.1 at 2009-12-15 11:49:17) [POST]
+  Parameters: {"commit"=>"Save changes", "story"=>{"name"=>"fesa", "description"=>"asdgiasef aseifj aseifj aseif", "link"=>"asefase.com"}, "authenticity_token"=>"Z2UKRkyciwHaNJGgQDlhpnPY2AMOtFT/KalXZlaJ0Ds="}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO "stories" ("name", "updated_at", "votes_count", "description", "link", "user_id", "created_at") VALUES('fesa', '2009-12-15 00:49:17', 0, 'asdgiasef aseifj aseifj aseif', 'asefase.com', 1, '2009-12-15 00:49:17')[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Create (0.0ms)[0m   [0;1mINSERT INTO "votes" ("updated_at", "story_id", "user_id", "created_at") VALUES('2009-12-15 00:49:17', 10, 1, '2009-12-15 00:49:17')[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 10) [0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE "stories" SET "votes_count" = COALESCE("votes_count", 0) + 1 WHERE ("id" = 10) [0m
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 10) [0m
+Redirected to http://localhost:3000/stories/10-fesa
+Completed in 187ms (DB: 0) | 302 Found [http://localhost/stories]
+
+
+Processing StoriesController#show (for 127.0.0.1 at 2009-12-15 11:49:18) [GET]
+  Parameters: {"id"=>"10-fesa"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 10) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/stories/10-fesa]
+/!\ FAILSAFE /!\  Tue Dec 15 12:13:34 +1100 2009
+  Status: 500 Internal Server Error
+  Expected F:/InstantRails/rails_apps/shovell2/app/helpers/users_helper.rb to define UsersHelper
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:426:in `load_missing_constant'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:361:in `constantize'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `each'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `constantize'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:137:in `helper'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:120:in `helper'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    F:/InstantRails/rails_apps/shovell2/app/controllers/application_controller.rb:5
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    F:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    F:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    F:/InstantRails/rails_apps/shovell2/script/server:3
+    -e:1:in `load'
+    -e:1
+/!\ FAILSAFE /!\  Tue Dec 15 12:14:27 +1100 2009
+  Status: 500 Internal Server Error
+  Expected F:/InstantRails/rails_apps/shovell2/app/helpers/votes_helper.rb to define VotesHelper
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:426:in `load_missing_constant'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:361:in `constantize'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `each'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `constantize'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:137:in `helper'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:120:in `helper'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    F:/InstantRails/rails_apps/shovell2/app/controllers/application_controller.rb:5
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    F:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    F:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    F:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    F:/InstantRails/rails_apps/shovell2/script/server:3
+    -e:1:in `load'
+    -e:1
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2009-12-15 12:14:43) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `votes' for #<Class:0x4b97400>):
+  app/models/user.rb:5
+  app/controllers/application_controller.rb:14:in `fetch_logged_in_user'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2009-12-15 12:16:00) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/stories]
+
+
+Processing StoriesController#show (for 127.0.0.1 at 2009-12-15 12:16:05) [GET]
+  Parameters: {"id"=>"6-name"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 6) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (16.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/stories/6-name]
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-12-15 12:16:07) [GET]
+  Parameters: {"id"=>"1-rich"}
+
+NameError (uninitialized constant UserController):
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-15 12:16:33) [GET]
+
+ActionController::RoutingError (No route matches "/user/1-rich" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-15 12:17:37) [GET]
+
+ActionController::RoutingError (No route matches "/user/1" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#show (for 127.0.0.1 at 2009-12-15 12:18:46) [GET]
+  Parameters: {"id"=>"6-name"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 6) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (15.0ms)
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/stories/6-name]
+
+
+Processing UsersController#1-rich (for 127.0.0.1 at 2009-12-15 12:18:48) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1-rich. Actions: show):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#1-rich (for 127.0.0.1 at 2009-12-15 12:20:25) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1-rich. Actions: show):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#1-rich (for 127.0.0.1 at 2009-12-15 12:20:27) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1-rich. Actions: show):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#show (for 127.0.0.1 at 2009-12-15 12:20:34) [GET]
+  Parameters: {"id"=>"6-name"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 6) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/stories/6-name]
+
+
+Processing UsersController#1-rich (for 127.0.0.1 at 2009-12-15 12:20:35) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1-rich. Actions: show):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#1-rich (for 127.0.0.1 at 2009-12-15 12:21:26) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1-rich. Actions: show):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#1-rich (for 127.0.0.1 at 2009-12-15 12:23:17) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1-rich. Actions: show):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2009-12-15 12:24:35) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE (votes_count >= 5) ORDER BY id DESC[0m
+Rendering template within layouts/application
+Rendering stories/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+Completed in 156ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StoriesController#show (for 127.0.0.1 at 2009-12-15 12:24:37) [GET]
+  Parameters: {"id"=>"6-name"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;35;1mVote Load (0.0ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".story_id = 6) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (453.0ms)
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 485ms (View: 469, DB: 0) | 200 OK [http://localhost/stories/6-name]
+
+
+Processing UsersController#1-rich (for 127.0.0.1 at 2009-12-15 12:24:39) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1-rich. Actions: show):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#1-rich (for 127.0.0.1 at 2009-12-15 12:25:02) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1-rich. Actions: show):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#1-rich (for 127.0.0.1 at 2009-12-15 12:25:37) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1-rich. Actions: show):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#show (for 127.0.0.1 at 2009-12-15 12:28:47) [GET]
+  Parameters: {"id"=>"6-name"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering stories/show
+  [4;36;1mVote Load (0.0ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".story_id = 6) ORDER BY id DESC LIMIT 3[0m
+Rendered votes/_vote (16.0ms)
+Rendered votes/_vote (0.0ms)
+Rendered votes/_vote (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/stories/6-name]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-12-15 12:30:22) [GET]
+  Parameters: {"id"=>"1-rich"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT "stories".* FROM "stories" INNER JOIN "votes" ON "stories".id = "votes".story_id WHERE (("votes".user_id = 1)) ORDER BY votes.id DESC LIMIT 6[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories".user_id = 1) ORDER BY stories.id DESC LIMIT 6[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (16.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered stories/_story (0.0ms)
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/users/1-rich]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStories (20091203004749)
+Migrating to CreateVotes (20091204105855)
+Migrating to CreateUsers (20091213061942)
+Migrating to AddCounterCacheToStories (20091214223244)
+Migrating to AddDescriptionToStories (20091215004349)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("stories")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("votes")[0m

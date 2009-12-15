@@ -3,7 +3,17 @@
 one:
   name: name
   link: atestlink.com
+  user: patrick
+  votes_count: 2
 
 two:
   name: MyString
   link: MyString
+  user: patrick
+  votes_count: 0
+
+promoted:
+  name: What is a debugger?
+  link: http://en.wikipedia.org/wiki/debugger
+  user: john
+  votes_count: 5

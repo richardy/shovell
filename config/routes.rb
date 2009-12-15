@@ -31,15 +31,16 @@ ActionController::Routing::Routes.draw do |map|
   #   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  # map.root :controller => "welcome"
+  map.root :controller => "stories"
 
   # See how all your routes lay out with "rake routes"
 
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
-  map.resources :stories, :has_many => :votes
+  map.resources :users
+  map.resource :session
+  map.resources :stories, :has_many => :votes, :collection => { :bin => :get}
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
-  map.resource :session
 end
